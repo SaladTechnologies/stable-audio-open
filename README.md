@@ -7,9 +7,12 @@ https://www.gradio.app/
 The Gradio code is configured to listen on an IPv6 port for running on SaladCloud; use IPv4 for local runs and tests:
 
 demo.launch( server_name="[::]", server_port=8000 ), for IPv6 usage
+
 demo.launch( server_name="0.0.0.0", server_port=8000 ), for IPv4 usage
 
 # Deploy on SaladCloud
+
+## Create a container group with the following paramaters and access the app using the generated Access Domian Name:
 
 Image Source: saladtechnologies/richardx:0.0.3-stable (our prebuilt image or yours)
 
