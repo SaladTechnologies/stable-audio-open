@@ -12,6 +12,5 @@ RUN apt-get install -y libsndfile1
 
 WORKDIR /app
 COPY hello-gradio.py /app
-COPY test1.py /app
 
 CMD ["python", "hello-gradio.py"]
